@@ -5,15 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81abef4f-e53a-4fc6-b454-6a917b4f4b1b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/base/Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/base/test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/features/signup.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepDef/Hook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepDef/LoginSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/PageObjects/loginPageObjects.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/stepDef/SignupSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/features/login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/login.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/features/signup.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/signup.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDef/Hook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDef/Hook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDef/LoginSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDef/LoginSteps.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +33,13 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="2LKJkrysD4UkaSP8TXhBUGL5f56" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -42,8 +49,8 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/Users/hbhuiyan/Documents/TalentTEK/GitStuff/CBDDFW_JAN_2023/src/test/java/features",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "last_opened_file_path": "C:/Users/ashif/Documents/Github/CBDDFW_JAN_2023/src/test/java/stepDef",
+    "settings.editor.selected.configurable": "vcs.Git"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -88,7 +95,6 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.TestRunner" />
-        <item itemvalue="Cucumber Java.Feature: login" />
       </list>
     </recent_temporary>
   </component>
@@ -113,5 +119,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
