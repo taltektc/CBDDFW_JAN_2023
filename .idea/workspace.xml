@@ -5,15 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81abef4f-e53a-4fc6-b454-6a917b4f4b1b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/base/Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/base/test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/features/signup.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepDef/Hook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepDef/LoginSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/base/TestData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pageObject/login_page.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/Config.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/features/login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/features/login.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDef/Hook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDef/Hook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDef/LoginSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDef/LoginSteps.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,14 +37,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "/Users/hbhuiyan/Documents/TalentTEK/GitStuff/CBDDFW_JAN_2023/src/test/java/features",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/hbhuiyan/Documents/TalentTEK/GitStuff/CBDDFW_JAN_2023/src/test/java/features&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test/java/features" />

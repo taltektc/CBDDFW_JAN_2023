@@ -8,7 +8,7 @@ import org.openqa.selenium.safari.SafariDriver;
 
 import java.time.Duration;
 
-public class Config {
+public class Config extends TestData{
     // init Driver
     public static WebDriver driver;
 
