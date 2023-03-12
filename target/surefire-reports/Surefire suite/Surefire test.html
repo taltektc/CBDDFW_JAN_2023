@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Mar 05 12:34:27 EST 2023</td>
+<td>Started on:</td><td>Sun Mar 12 12:30:52 EDT 2023</td>
 </tr>
-<tr><td>Total time:</td><td>6 seconds (6091 ms)</td>
+<tr><td>Total time:</td><td>8 seconds (8591 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,58 +75,24 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='TestRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User should be able to login with valid email and password", "Optional[Login Feature]"</td>
-<td><div><pre>io.cucumber.testng.UndefinedStepException: The step &apos;user should be able to successfully login&apos; is undefined.
-You can implement this step using the snippet(s) below:
-
-@Then(&quot;user should be able to successfully login&quot;)
-public void user_should_be_able_to_successfully_login() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
-	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$0(TestNGCucumberRunner.java:118)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:117)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:114)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:31)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-... Removed 12 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace366648749", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace366648749'><pre>io.cucumber.testng.UndefinedStepException: The step &apos;user should be able to successfully login&apos; is undefined.
-You can implement this step using the snippet(s) below:
-
-@Then(&quot;user should be able to successfully login&quot;)
-public void user_should_be_able_to_successfully_login() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
-	at io.cucumber.core.runtime.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:69)
-	at io.cucumber.testng.TestCaseResultObserver.assertTestCasePassed(TestCaseResultObserver.java:23)
-	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$0(TestNGCucumberRunner.java:118)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:117)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:114)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:31)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:832)
+<td title='TestRunner.runScenario()'><b>runScenario</b><br>Test class: TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User should not be able to login with valid email and invalid password", "Optional[Login Feature]"</td>
+<td><div><pre>java.lang.AssertionError: expected [You have entered an incorrect email or student Ids] but found [You have entered an incorrect email or student Id]
+	at pageObject.login_page.verifyErrorMessageForInvalidEmailOrPassword(login_page.java:55)
+	at stepDef.LoginSteps.userShouldBeAbleSeeMessage(LoginSteps.java:55)
+	at ✽.user should be able see &quot;You have entered an incorrect email or student Ids&quot; message(file:///Users/hbhuiyan/Documents/TalentTEK/GitStuff/CBDDFW_JAN_2023/src/test/java/features/login.feature:17)
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace583181796", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace583181796'><pre>java.lang.AssertionError: expected [You have entered an incorrect email or student Ids] but found [You have entered an incorrect email or student Id]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at pageObject.login_page.verifyErrorMessageForInvalidEmailOrPassword(login_page.java:55)
+	at stepDef.LoginSteps.userShouldBeAbleSeeMessage(LoginSteps.java:55)
+	at ✽.user should be able see &quot;You have entered an incorrect email or student Ids&quot; message(file:///Users/hbhuiyan/Documents/TalentTEK/GitStuff/CBDDFW_JAN_2023/src/test/java/features/login.feature:17)
 </pre></div></td>
-<td>5</td>
+<td>8</td>
 <td>TestRunner@971d0d8</td></tr>
 </table><p>
 </body>

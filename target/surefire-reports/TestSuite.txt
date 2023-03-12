@@ -1,16 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 6.312 s <<< FAILURE! - in TestSuite
-TestRunner.runScenario["User should be able to login with valid email and password", "Optional[Login Feature]"](1)  Time elapsed: 5.753 s  <<< FAILURE!
-io.cucumber.testng.UndefinedStepException: 
-The step 'user should be able to successfully login' is undefined.
-You can implement this step using the snippet(s) below:
-
-@Then("user should be able to successfully login")
-public void user_should_be_able_to_successfully_login() {
-    // Write code here that turns the phrase above into concrete actions
-    throw new io.cucumber.java.PendingException();
-}
-
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 8.819 s <<< FAILURE! - in TestSuite
+TestRunner.runScenario["User should not be able to login with valid email and invalid password", "Optional[Login Feature]"](1)  Time elapsed: 8.178 s  <<< FAILURE!
+java.lang.AssertionError: expected [You have entered an incorrect email or student Ids] but found [You have entered an incorrect email or student Id]
 

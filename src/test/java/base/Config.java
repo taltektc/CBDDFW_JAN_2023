@@ -3,6 +3,7 @@ package base;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
@@ -15,6 +16,9 @@ public class Config extends TestData{
     // Setup browser type
     public static WebDriver setupBrowser (String driverType){
         if (driverType.equalsIgnoreCase("Ch")){
+            ChromeOptions ops = new ChromeOptions();
+            ops.addArguments("--remote-allow-origins=*");
+            ops.addArguments("--incognito");
             WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver();
         } else if (driverType.equalsIgnoreCase("ff")){

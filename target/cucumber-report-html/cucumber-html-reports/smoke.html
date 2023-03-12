@@ -76,7 +76,7 @@ $(document).ready(function() {
           <tr class="info">
             <td>CBDDFW_JAN_2023</td>
                           <td>1</td>
-                        <td>05 Mar 2023, 12:34</td>
+                        <td>12 Mar 2023, 12:31</td>
           </tr>
         </tbody>
       </table>
@@ -123,17 +123,17 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@smoke</td>
-                    <td  class="passed"    >1</td>
-          <td >0</td>
+                    <td >0</td>
+          <td  class="failed"    >1</td>
           <td class="total">1</td>
           <td      class="passed"    >4</td>
+          <td      class="failed"    >1</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
-          <td   class="undefined" >1</td>
           <td class="total">5</td>
-          <td class="duration" data-value="481377000">481ms</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="379788000">379ms</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -157,18 +157,16 @@ $(document).ready(function() {
   
   
 <div class="tags indention">
-       <a href="regression.html">@regression</a>
        <a href="smoke.html">@smoke</a>
-       <a href="sanity.html">@sanity</a>
        <a href="hb.html">@hb</a>
   </div>
 
 
-    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
     
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">User should be able to login with valid email and password</span>
+  <span class="name">User should not be able to login with valid email and invalid password</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -177,7 +175,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details ">
+  <div id="element-1" class="collapse collapsable-details  in ">
     
   <div class="inner-level hooks-before">
         <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-2">
@@ -198,7 +196,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
                           <span class="location name">stepDef.Hook.beforeEachTest()</span>
                         
-  <span class="lead-duration duration">5s 089ms</span>
+  <span class="lead-duration duration">6s 859ms</span>
 
           </div>
 
@@ -214,7 +212,7 @@ $(document).ready(function() {
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
+    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
     
 <div class="brief failed">
   <span class="keyword indention">Steps</span>
@@ -226,14 +224,14 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details ">
+  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
   <span class="name">user in TalentTEK Homepage</span>
   
-  <span class="lead-duration duration">021ms</span>
+  <span class="lead-duration duration">027ms</span>
 
   </div>
 
@@ -254,7 +252,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">user enter valid email address</span>
   
-  <span class="lead-duration duration">287ms</span>
+  <span class="lead-duration duration">052ms</span>
 
   </div>
 
@@ -273,9 +271,9 @@ $(document).ready(function() {
         
 <div class="brief passed">
   <span class="keyword indention">And</span>
-  <span class="name">user enter valid password</span>
+  <span class="name">user enter invalid password</span>
   
-  <span class="lead-duration duration">072ms</span>
+  <span class="lead-duration duration">032ms</span>
 
   </div>
 
@@ -296,7 +294,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">user clicks on Log In button</span>
   
-  <span class="lead-duration duration">100ms</span>
+  <span class="lead-duration duration">244ms</span>
 
   </div>
 
@@ -313,15 +311,36 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief undefined">
+<div class="brief failed">
   <span class="keyword indention">Then</span>
-  <span class="name">user should be able to successfully login</span>
+  <span class="name">user should be able see "You have entered an incorrect email or student Ids" message</span>
   
-  <span class="lead-duration duration">000ms</span>
+  <span class="lead-duration duration">023ms</span>
 
   </div>
 
         
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Error message</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>java.lang.AssertionError: expected [You have entered an incorrect email or student Ids] but found [You have entered an incorrect email or student Id]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at pageObject.login_page.verifyErrorMessageForInvalidEmailOrPassword(login_page.java:55)
+	at stepDef.LoginSteps.userShouldBeAbleSeeMessage(LoginSteps.java:55)
+	at ✽.user should be able see "You have entered an incorrect email or student Ids" message(file:///Users/hbhuiyan/Documents/TalentTEK/GitStuff/CBDDFW_JAN_2023/src/test/java/features/login.feature:17)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
         
@@ -338,7 +357,7 @@ $(document).ready(function() {
 
     
   <div class="inner-level hooks-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-5">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -350,13 +369,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-4" class="inner-level collapse collapsable-details ">
+    <div id="after-5" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
-                          <span class="location name">stepDef.Hook.afterEachTest()</span>
+                          <span class="location name">stepDef.Hook.afterEachTest(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">000ms</span>
+  <span class="lead-duration duration">782ms</span>
 
           </div>
 
@@ -364,6 +383,17 @@ $(document).ready(function() {
 
           
           
+  <div class="embeddings inner-level">
+                <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding_embedding_-778259016" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_-778259016.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
+    </div>
+    <div id="embedding_embedding_-778259016" class="collapse collapsable-detail">
+      <span class="embedding-content"><img src="embeddings/embedding_-778259016.png"></span>
+    </div>
+  </div>
+        </div>
 
         </div>
           </div>
