@@ -19,7 +19,7 @@ public class Hook extends Config {
         driver = setupBrowser (driverType);
         switch (envType){
             case "qa":
-                url = "https://qa.taltektc.com/home/signup";
+                url = "https://qa.taltektc.com";
                 Email_Address = "qa.env1@gmail.com";
                 Password = "Test1234";
                 break;
