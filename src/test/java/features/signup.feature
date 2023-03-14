@@ -7,5 +7,6 @@ Feature: Signup Feature
     And user enter First and Last Name
     And user enter Password
     And user enter Confirm Password
+    And user enter DOB
 
 
