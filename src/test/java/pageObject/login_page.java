@@ -28,9 +28,10 @@ public class login_page extends Config {
     public WebElement welcomeMsgLocator;
     @FindBy(how= How.XPATH, using = "//*[@id='error_message']/div/h5")
     public WebElement invalidEmailOrPassErrorMsgLocator;
-
     @FindBy(how= How.NAME, using = "month")
     public WebElement monthDropDown;
+    @FindBy(how= How.XPATH, using = "//a[contains(text(),'Create new account')]")
+    public WebElement createNewAccountButton;
 
 
     // functions
@@ -61,5 +62,11 @@ public class login_page extends Config {
     public void dropDownMonth (String month){
         Select mm = new Select (monthDropDown);
         mm.selectByVisibleText(month);
+    }
+
+    public void clickOnButton (String button){
+        if (button.contains("Create new account")){
+            createNewAccountButton.click();
+        }
     }
 }

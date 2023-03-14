@@ -72,4 +72,9 @@ public class LoginSteps extends Config {
         lp.dropDownMonth("Nov");
     }
 
+    @And("user click on {string} button")
+    public void userClickOnButton(String buttonText) {
+       // driver.findElement(By.xpath("//a[contains(text(),'"+buttonText+"')]")).click();
+        lp.clickOnButton(buttonText);
+    }
 }
