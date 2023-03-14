@@ -89,6 +89,8 @@
       <list>
         <item itemvalue="TestNG.TestRunner" />
         <item itemvalue="Cucumber Java.Feature: login" />
+        <item itemvalue="TestNG.TestRunner" />
+        <item itemvalue="Cucumber Java.Feature: login" />
       </list>
     </recent_temporary>
   </component>
