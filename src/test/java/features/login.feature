@@ -9,11 +9,9 @@ Feature: Login Feature
     When user clicks on Log In button
     Then user should be able to successfully login
 
-  @hb
   Scenario: Existing user should be able to login
     And login
 
-    @smoke @hb
   Scenario: User should not be able to login with valid email and invalid password
     And user enter valid email address
     And user enter invalid password

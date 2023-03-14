@@ -1,7 +1,0 @@
-stepDef/Hook.class
-pageObject/login_page.class
-base/test.class
-base/TestData.class
-base/Config.class
-TestRunner.class
-stepDef/LoginSteps.class

@@ -9,16 +9,13 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
 public class Hook extends Config {
-    // QA: http://www.qa.taltektc.com
-    // STAGE: http://www.stage.taltektc.com
-    // PROD: http://www.prod.taltektc.com
-
     public static String url;
     public static String driverType = System.getProperty("browser");
     public static String envType = System.getProperty("env");
 
     @Before
     public void beforeEachTest(){
+        System.setProperty("webdriver.http.factory", "jdk-http-client");
         driver = setupBrowser (driverType);
         switch (envType){
             case "qa":
