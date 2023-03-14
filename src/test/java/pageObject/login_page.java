@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
 public class login_page extends Config {
@@ -28,6 +29,8 @@ public class login_page extends Config {
     @FindBy(how= How.XPATH, using = "//*[@id='error_message']/div/h5")
     public WebElement invalidEmailOrPassErrorMsgLocator;
 
+    @FindBy(how= How.NAME, using = "month")
+    public WebElement monthDropDown;
 
 
     // functions
@@ -53,5 +56,10 @@ public class login_page extends Config {
         String fullText = invalidEmailOrPassErrorMsgLocator.getText();
         String act = fullText.substring(1, fullText.length()-1);
         Assert.assertEquals(act, errorMsg);
+    }
+
+    public void dropDownMonth (String month){
+        Select mm = new Select (monthDropDown);
+        mm.selectByVisibleText(month);
     }
 }

@@ -2,7 +2,7 @@ Feature: Login Feature
   Background:
     Given user in TalentTEK Homepage
 
-  @regression @smoke @sanity @hb
+  @regression @smoke @sanity
   Scenario: User should be able to login with valid email and password
     And user enter valid email address
     And user enter valid password

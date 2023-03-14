@@ -66,4 +66,10 @@ public class LoginSteps extends Config {
         lp.enterPassword(Password);
         lp.clickOnLoginButton();
     }
+
+    @And("user enter month under Birth Date")
+    public void userEnterMonthUnderDOB() {
+        lp.dropDownMonth("Nov");
+    }
+
 }
